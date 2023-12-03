@@ -1,11 +1,6 @@
-'''input = open("./inputs/day1.txt", "r")
-lines = input.readlines().split("\n")[0]
-print(lines)'''
-
 with open("./inputs/day1.txt") as f:
     mylist = f.read().splitlines()
-mylist
-'''
+
 sum = 0
 for line in mylist:
     l = len(line)-1
@@ -16,7 +11,7 @@ for line in mylist:
         l -= 1
     sum += int(line[i]+line[l])
 
-print(sum)'''
+print(sum)
 
 words = {
     "one": 'o1e',
@@ -29,11 +24,9 @@ words = {
     "eight": 'e8t',
     "nine": 'n9e'
 }
+
+
 sum2 = 0
-
-
-
-
 
 for line in mylist:
     curr = line
